@@ -15,7 +15,7 @@
         <activity
             android:name=".activities.TaskListActivity"
             android:exported="true"
-            android:label="...">
+            android:label="@string/main_activity_label">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

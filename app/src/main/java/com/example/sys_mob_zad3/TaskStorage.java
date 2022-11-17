@@ -1,6 +1,7 @@
 package com.example.sys_mob_zad3;
 import android.util.Log;
 
+import com.example.sys_mob_zad3.enums.Category;
 import com.example.sys_mob_zad3.models.Task;
 
 import java.util.ArrayList;
@@ -17,12 +18,25 @@ public class TaskStorage {
     }
 
     private TaskStorage () {
+        Task task;
+
         for (int i = 0; i < 100; ++i) {
-            Task task = new Task();
+            task = new Task();
+
             task.setName(String.format("Task #%d", i));
             task.setDone(i % 3 == 0);
+            if (i % 3 == 0) {
+                task.setCategory(Category.STUDIES);
+            } else {
+                task.setCategory(Category.HOME);
+            }
+
             tasks.add(task);
         }
+    }
+
+    public void addTask(Task task) {
+        tasks.add(task);
     }
 
     public List<Task> getTasks() {

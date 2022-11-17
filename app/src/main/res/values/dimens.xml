@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fragment_task_layout_margin">20dp</dimen>
+    <dimen name="checkbox_dimens">40dp</dimen>
+    <dimen name="icon_dimens">40dp</dimen>
+    <dimen name="list_item_task_layout_width">300dp</dimen>
+</resources>

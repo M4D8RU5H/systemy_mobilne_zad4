@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextFieldsStyle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
